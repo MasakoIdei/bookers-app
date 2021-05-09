@@ -1,0 +1,24 @@
+  <h1>Books</h1>
+<% books.each do |books|%>
+  <table>
+    <thead>
+      <td>Title</td>
+      <td>Body</td>
+      <% each %>
+    </thead>
+    <tbody>
+      <td>リーダブルコード</td>
+      <td>より良いコードを書くためのシンプルで実践的なテクニック</td>
+      <td><a href="#">Show</a></td>
+      <td><a href="#">Edit</a></td>
+      <td><a href="#">Destroy</a></td>
+    </tbody>
+  </table>
+  <% end %>
+  <h2>New book</h2>
+  <p>title</p>
+  <input type="text">
+  <p>body</p>
+  <textarea></textarea>
+  <p><input type="button" value="Create Book"></p>
+  
