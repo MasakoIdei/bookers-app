@@ -1,24 +1,49 @@
   <h1>Books</h1>
-<% books.each do |books|%>
   <table>
     <thead>
-      <td>Title</td>
-      <td>Body</td>
-      <% each %>
+      <tr>
+       <th>Title</th>
+       <th>Body</th>
+      </tr>
     </thead>
+    
+     
     <tbody>
-      <td>リーダブルコード</td>
-      <td>より良いコードを書くためのシンプルで実践的なテクニック</td>
-      <td><a href="#">Show</a></td>
-      <td><a href="#">Edit</a></td>
-      <td><a href="#">Destroy</a></td>
+      <!--繰り返し処理each-->
+      <tr> 
+      <td>
+        タイトル
+      </td>
+      <td>
+        ボディー
+      </td>
+      <td>
+        <%="show"%>
+      </td>
+      <td>
+        <%= "edit"%>
+      </td>
+      <td>
+        <%= "destroy"%>
+      </td>
+      </tr>
+     <!--繰り返し処理eachのend-->
     </tbody>
+   
   </table>
-  <% end %>
-  <h2>New book</h2>
-  <p>title</p>
-  <input type="text">
-  <p>body</p>
-  <textarea></textarea>
-  <p><input type="button" value="Create Book"></p>
   
+  
+  
+
+  <h2>New book</h2>
+  <!--新規投稿機能-->
+  <%= form_with model:@???,local:true do |f| %>
+  
+  <p>title</p>
+  <%= f.tex.field %>
+  
+  <p>body</p>
+  <%= f.text_area :body %>
+  <%= f.submit'Create Book' %>
+  
+  <% end %>
