@@ -2,14 +2,15 @@
 
  <%= form_with model:@book,local:true do |f| %>
 
-   <h4>Title</h4>
+   <h2>Title</h2>
    <%= f.text_field :title %>
 
-    <h4>Body</h4>
+    <h2>Body</h2>
     <%= f.text_area :body %>
 
     <br><%= f.submit 'Update Book' %><br>
 
     <% end %>
 
+<br><%=link_to "back", books_path %> | <%=link_to "show", book_path %><br>
 
