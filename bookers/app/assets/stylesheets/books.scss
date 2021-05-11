@@ -10,57 +10,47 @@
 body {
   background-color: #fff;
   color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: arial,sans-serif;
   font-size: 13px;
-  line-height: 18px;
   margin: 33px;
 }
-body {
-  display: block;
-  margin: 8px;
-}
+
 h1 {
-  display: blok;
-  font-size: 2em;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 1em;
-  margin-inline-end: 1em;
-  font-weight: bold;
+    font-size: 2em;
+    margin : 20px auto;
 }
-.p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+h2 {
+  font-size: 1.5em ;
+  margin : 20px auto;
+
 }
-table {
-    display: table;
-    border-collapse: separate;
-    box-sizing: border-box;
-    text-indent: initial;
-    border-spacing: 2px;
-    border-color: gray;
+input, textarea {
+  padding:3px;
 }
-thead {
-  display: table-header-group;
-  vertical-align: middle;
-  border-color: inherit;
+
+p, ul, td {
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 33px;
 }
+
+
 td {
-  padding-bottom: 7px;
-  padding-left: 5px;
-  padding-right: 5px;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
-td {
-  display: table-cell;
-  vertical-align: inherit;
-}
-a {
-  color: #000;
-}
+
+  /リンク、フラッシュメッセージの色指定/
+
 .notice {
   color: #008000;
-  font-size: 13px;
+}
+a:link { 
+  color:#333; 
+}
+a:hover { 
+  color:#fff;
+  background-color: #333;
 }
