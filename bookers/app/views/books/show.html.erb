@@ -1,10 +1,17 @@
+<p class="notice"><%= flash[:notice] %></p>
 
-  <h2>title :</h2>
-  <%= @book.title %>
+  <p>
+    <strong>title :</strong><%= @book.title %>
+  </p>
 
 
 
-  <h2>body :</h2>
-  <%= @book.body %>
 
-<br><%=link_to "back", books_path %> | <%=link_to "edit", edit_book_path %><br>
+  <p>
+    <strong>body :</strong><%= @book.body %>
+  </p>
+
+
+<br>
+<p><%=link_to "Edit", edit_book_path %> | <%=link_to "Back", books_path %></p>
+<br>
